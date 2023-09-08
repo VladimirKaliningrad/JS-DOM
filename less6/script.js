@@ -55,6 +55,4 @@ task7.forEach(element => {
     }
 });
 
-// document.querySelectorAll('li:nth-child(2n)')
-//     .forEach(el => el.style.backgroundColor = 'red');
 
