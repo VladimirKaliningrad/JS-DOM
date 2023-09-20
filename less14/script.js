@@ -16,7 +16,7 @@ async function fetchData() {
                     <p class="product__text">${description}</p>
                     <p class="product__price">${price}</p>
                 </div>
-                <div class="product-add">
+                <div class="product__addtocart">
                     <img src="img/bin.svg" alt="">
                     <p>Add to Cart</p>
                 </div>
@@ -39,7 +39,7 @@ async function cartData() {
         }
         const data = await responce.json();
 
-        const cartBox = document.querySelector('.cart__box');
+        const cartBox = document.querySelector('.cart-box');
         data.forEach(({ name, image, price, color, size, quantity }) => {
             const cart = `
             <div class="cart">
@@ -75,7 +75,7 @@ async function cartData() {
 
 // cartData();
 
-const addToCart = document.querySelectorAll('.product-add');
+const addToCart = document.querySelectorAll('.product__addtocart');
 console.log(addToCart);
 addToCart.forEach((el) => {
     el.addEventListener('click', () => {

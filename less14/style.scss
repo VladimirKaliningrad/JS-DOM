@@ -101,40 +101,34 @@ body {
         filter: brightness(0.5);
     }
 
-    &:hover .product__img {
-        -webkit-filter: brightness(0.5);
-        filter: brightness(0.5);
-    }
-
-    &:hover .product-add {
+    &:hover .product__addtocart {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
     }
-}
 
-.product-add {
-    position: absolute;
-    top: 188px;
-    left: 111px;
-    border: 1px solid #fff;
-    width: 139px;
-    height: 44px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    gap: 11px;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    color: #FFFFFF;
-    cursor: pointer;
-
+    &__addtocart {
+        position: absolute;
+        top: 188px;
+        left: 111px;
+        border: 1px solid #fff;
+        width: 139px;
+        height: 44px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        gap: 11px;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        color: #FFFFFF;
+        cursor: pointer;
+    }
 
     &:hover {
         -webkit-box-shadow: 0 0 5px #fff;
@@ -203,36 +197,7 @@ body {
     }
 }
 
-.feedback {
-    background-image: url(img/review-bac.jpg);
-    background-position: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 86px;
-    padding-bottom: 126px;
-}
-
-.review {
-    width: 360px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-
-    &__text {
-        text-align: center;
-        color: $colorBack;
-        text-align: center;
-        font-size: 20px;
-    }
-}
-
-.cart__box {
+.cart-box {
     padding-top: 100px;
     display: flex;
     flex-direction: column;
@@ -240,8 +205,6 @@ body {
     align-items: center;
     gap: 40px;
 }
-
-
 
 .cart {
     position: relative;

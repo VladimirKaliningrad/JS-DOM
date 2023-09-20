@@ -87,14 +87,10 @@ body {
 .product:hover .product__img {
   filter: brightness(0.5);
 }
-.product:hover .product__img {
-  filter: brightness(0.5);
-}
-.product:hover .product-add {
+.product:hover .product__addtocart {
   display: flex;
 }
-
-.product-add {
+.product__addtocart {
   position: absolute;
   top: 188px;
   left: 111px;
@@ -116,10 +112,10 @@ body {
   color: #FFFFFF;
   cursor: pointer;
 }
-.product-add:hover {
+.product:hover {
   box-shadow: 0 0 5px #fff;
 }
-.product-add:hover svg path {
+.product:hover svg path {
   fill: #F16D7F;
 }
 
@@ -179,35 +175,7 @@ body {
   color: #FBFBFB;
 }
 
-.feedback {
-  background-image: url(img/review-bac.jpg);
-  background-position: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 86px;
-  padding-bottom: 126px;
-}
-
-.review {
-  width: 360px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-}
-.review__text {
-  text-align: center;
-  color: #222;
-  text-align: center;
-  font-size: 20px;
-}
-
-.cart__box {
+.cart-box {
   padding-top: 100px;
   display: flex;
   flex-direction: column;
